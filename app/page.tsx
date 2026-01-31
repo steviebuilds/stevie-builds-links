@@ -72,7 +72,7 @@ export default function Home() {
               />
             </a>
             <a
-              href="https://github.com/steviebuildsdotdev"
+              href="https://github.com/steviebuilds"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-[#3ED1FE]/10 hover:bg-[#3ED1FE]/20 flex items-center justify-center transition-all duration-300 hover:scale-110"

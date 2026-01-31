@@ -108,6 +108,45 @@ export default function OpenClawTutorial() {
 
       <Separator className="my-12 bg-gray-800" />
 
+      {/* The Best Part */}
+      <section className="mb-12">
+        <Card className="p-8 border-[#3ED1FE]/50 bg-gradient-to-br from-[#3ED1FE]/20 via-[#3ED1FE]/10 to-transparent">
+          <h2 className="text-3xl font-bold mb-4 flex items-center gap-3">
+            <span className="text-4xl">🎯</span>
+            The Best Part
+          </h2>
+          <div className="space-y-4 text-gray-200">
+            <p className="text-lg leading-relaxed">
+              Once OpenClaw is running and you're chatting with it on Telegram (or your chosen platform), 
+              you can simply <strong className="text-[#3ED1FE]">ASK it to do things</strong> and it will help you set them up.
+            </p>
+            
+            <div className="space-y-2 ml-4">
+              <p className="flex items-start gap-2">
+                <span className="text-[#3ED1FE] mt-1">•</span>
+                <span>Want it to check your Gmail? <strong>Just ask.</strong></span>
+              </p>
+              <p className="flex items-start gap-2">
+                <span className="text-[#3ED1FE] mt-1">•</span>
+                <span>Want it to create calendar events? <strong>Just ask.</strong></span>
+              </p>
+              <p className="flex items-start gap-2">
+                <span className="text-[#3ED1FE] mt-1">•</span>
+                <span>Want it to send you weather updates? <strong>Just ask.</strong></span>
+              </p>
+            </div>
+
+            <p className="text-lg leading-relaxed pt-2">
+              It will walk you through installing the necessary skills and configuring everything. 
+              You don't need to memorize commands or read documentation — just talk to it like 
+              you would a helpful assistant.
+            </p>
+          </div>
+        </Card>
+      </section>
+
+      <Separator className="my-12 bg-gray-800" />
+
       {/* Prerequisites */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">What You'll Need</h2>
@@ -538,6 +577,68 @@ openclaw pairing approve whatsapp <code>`}</code>
             <strong>💡 Pro tip:</strong> Your AI assistant can help configure itself! If you want to change settings, 
             add new features, or set up automations, just ask it. It has access to all the commands 
             and can walk you through everything.
+          </p>
+        </div>
+      </section>
+
+      <Separator className="my-12 bg-gray-800" />
+
+      {/* Recommended Skills */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Recommended Skills to Install</h2>
+        <p className="text-gray-300 mb-6">
+          OpenClaw becomes more powerful with skills. Here are some useful ones to get started. 
+          You can ask your assistant to help install any of these!
+        </p>
+        
+        <div className="grid md:grid-cols-2 gap-4">
+          <Card className="p-5 border-gray-800 bg-gray-900/50">
+            <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
+              <span className="text-2xl">📧</span>
+              gog (Google Workspace)
+            </h3>
+            <p className="text-sm text-gray-400">
+              Access Gmail, Calendar, Drive, and Sheets. Check emails, schedule events, search documents, 
+              and manage spreadsheets — all from chat.
+            </p>
+          </Card>
+
+          <Card className="p-5 border-gray-800 bg-gray-900/50">
+            <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
+              <span className="text-2xl">🌤️</span>
+              weather
+            </h3>
+            <p className="text-sm text-gray-400">
+              Get weather forecasts for your location or anywhere in the world. Perfect for daily briefings 
+              or planning your day.
+            </p>
+          </Card>
+
+          <Card className="p-5 border-gray-800 bg-gray-900/50">
+            <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
+              <span className="text-2xl">🐙</span>
+              github
+            </h3>
+            <p className="text-sm text-gray-400">
+              Manage repositories, check issues, review pull requests, and get notifications about your projects.
+            </p>
+          </Card>
+
+          <Card className="p-5 border-gray-800 bg-gray-900/50">
+            <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
+              <span className="text-2xl">⏰</span>
+              remind-me
+            </h3>
+            <p className="text-sm text-gray-400">
+              Set natural language reminders like "remind me in 2 hours" or "remind me tomorrow at 9am to call John."
+            </p>
+          </Card>
+        </div>
+
+        <div className="mt-6 p-4 bg-blue-950/20 border border-blue-900/50 rounded-lg">
+          <p className="text-sm text-blue-200">
+            <strong>💡 Installing skills is easy:</strong> Just tell your assistant "Install the gog skill" 
+            or "Help me set up Google Calendar integration" and it will guide you through the process.
           </p>
         </div>
       </section>
