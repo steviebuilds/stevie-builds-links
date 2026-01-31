@@ -126,16 +126,16 @@ export default function OpenClawTutorial() {
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">What You'll Need</h2>
         
-        <div className="mb-6 p-5 bg-green-950/20 border-2 border-green-900/50 rounded-lg">
-          <h3 className="font-bold text-lg mb-3 flex items-center gap-2 text-gray-900 dark:text-green-100">
+        <div className="mb-6 p-5 bg-cyan-50 dark:bg-cyan-950/50 border-2 border-cyan-200 dark:border-cyan-800 rounded-lg">
+          <h3 className="font-bold text-lg mb-3 flex items-center gap-2 text-gray-900 dark:text-cyan-100">
             <span className="text-2xl">⚡</span>
             FIRST: Get a Claude Subscription (REQUIRED)
           </h3>
-          <p className="text-gray-900 dark:text-green-200 mb-3">
+          <p className="text-gray-900 dark:text-cyan-100 mb-3">
             <strong>Before you do anything else, you need an active Claude subscription.</strong> This is what powers OpenClaw's AI brain. 
             Without this, nothing will work.
           </p>
-          <ul className="space-y-2 text-gray-900 dark:text-green-200">
+          <ul className="space-y-2 text-gray-900 dark:text-cyan-100">
             <li className="flex items-start gap-2">
               <span className="text-[#3ED1FE] mt-1">1.</span>
               <span>Go to <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline font-semibold">claude.ai</a> and sign up for a Pro subscription</span>
@@ -167,8 +167,8 @@ export default function OpenClawTutorial() {
           </li>
         </ul>
 
-        <div className="mt-4 p-4 bg-gray-800/30 border border-gray-700 rounded-lg">
-          <p className="text-sm text-gray-700 dark:text-gray-400">
+        <div className="mt-4 p-4 bg-gray-50 dark:bg-gray-900/30 border border-gray-300 dark:border-gray-700 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-gray-200">
             <strong>For advanced users:</strong> If you prefer to use an Anthropic API key instead of a subscription, 
             you can get one from <a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">console.anthropic.com</a>. 
             However, this costs more for regular use and requires more technical setup. Most people should stick with the subscription.
@@ -183,11 +183,11 @@ export default function OpenClawTutorial() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Step 1: Open Your Terminal</h2>
         
         <div className="mb-6 space-y-4">
-          <div className="p-4 bg-blue-950/20 border border-blue-900/50 rounded-lg">
-            <p className="text-sm text-gray-900 dark:text-blue-200 mb-2">
+          <div className="p-4 bg-gray-50 dark:bg-gray-900/30 border border-gray-300 dark:border-gray-700 rounded-lg">
+            <p className="text-sm text-gray-900 dark:text-gray-200 mb-2">
               <strong>🖥️ How to open your terminal:</strong>
             </p>
-            <ul className="space-y-1 text-sm text-gray-900 dark:text-blue-200">
+            <ul className="space-y-1 text-sm text-gray-900 dark:text-gray-200">
               <li className="flex gap-2">
                 <span>•</span>
                 <span><strong>Mac:</strong> Press <kbd className="px-2 py-1 bg-gray-800 rounded text-xs">Cmd + Space</kbd>, type "Terminal", press Enter</span>
@@ -203,14 +203,14 @@ export default function OpenClawTutorial() {
             </ul>
           </div>
 
-          <div className="p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
-            <p className="text-sm text-gray-900 dark:text-yellow-200 mb-2">
+          <div className="p-4 bg-gray-100 dark:bg-gray-900/50 border-l-4 border-orange-300 dark:border-orange-800 border-r border-t border-b border-orange-300/50 dark:border-orange-800/50 rounded-lg">
+            <p className="text-sm text-gray-900 dark:text-orange-100 mb-2">
               <strong>⚠️ Windows Users - Important!</strong>
             </p>
-            <p className="text-sm text-gray-900 dark:text-yellow-200 mb-3">
+            <p className="text-sm text-gray-900 dark:text-orange-100 mb-3">
               OpenClaw doesn't work well on native Windows. You need to install WSL2 (Windows Subsystem for Linux) first:
             </p>
-            <ol className="space-y-2 text-sm text-gray-900 dark:text-yellow-200 ml-4">
+            <ol className="space-y-2 text-sm text-gray-900 dark:text-orange-100 ml-4">
               <li>1. Open PowerShell as Administrator</li>
               <li>2. Run: <code className="bg-gray-900 px-2 py-1 rounded">wsl --install</code></li>
               <li>3. Restart your computer</li>
@@ -257,9 +257,9 @@ export default function OpenClawTutorial() {
           </pre>
         </Card>
 
-        <div className="p-5 bg-green-950/20 border border-green-900/50 rounded-lg mb-6">
-          <h4 className="font-bold mb-2 text-gray-900 dark:text-green-100">What happens during onboarding:</h4>
-          <ul className="space-y-2 text-sm text-gray-900 dark:text-green-200">
+        <div className="p-5 bg-cyan-50 dark:bg-cyan-950/50 border border-cyan-200 dark:border-cyan-800 rounded-lg mb-6">
+          <h4 className="font-bold mb-2 text-gray-900 dark:text-cyan-100">What happens during onboarding:</h4>
+          <ul className="space-y-2 text-sm text-gray-900 dark:text-cyan-100">
             <li className="flex gap-2">
               <span className="text-[#3ED1FE]">1.</span>
               <span>You'll choose <strong>"Anthropic"</strong> as your AI provider</span>
@@ -358,12 +358,12 @@ export default function OpenClawTutorial() {
         <h3 className="font-semibold mb-3 text-lg flex items-center gap-2">
           ✨ Option A: Claude Subscription (RECOMMENDED)
         </h3>
-        <div className="mb-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-green-200 mb-3">
+        <div className="mb-6 p-4 bg-cyan-50 dark:bg-cyan-950/50 border border-cyan-200 dark:border-cyan-800 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-cyan-100 mb-3">
             <strong>Best for most people:</strong> This is cheaper and easier than API access. 
             Just like you'd pay for Netflix, you pay Claude for unlimited use.
           </p>
-          <ul className="space-y-2 text-sm text-gray-900 dark:text-green-200">
+          <ul className="space-y-2 text-sm text-gray-900 dark:text-cyan-100">
             <li className="flex gap-2">
               <span>•</span>
               <span><strong>Get a $100+ plan</strong> at <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">claude.ai</a> (the $20 plan runs out too fast for automation)</span>
@@ -408,8 +408,8 @@ export ANTHROPIC_API_KEY="sk-ant-..."
           </pre>
         </Card>
 
-        <div className="mt-4 p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-yellow-200">
+        <div className="mt-4 p-4 bg-gray-100 dark:bg-gray-900/50 border-l-4 border-orange-300 dark:border-orange-800 border-r border-t border-b border-orange-300/50 dark:border-orange-800/50 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-orange-100">
             <strong>⚠️ Note:</strong> API usage is billed per message and can get expensive quickly if you're using OpenClaw frequently. Most people find a Claude subscription more economical.
           </p>
         </div>
@@ -441,8 +441,8 @@ export ANTHROPIC_API_KEY="sk-ant-..."
           </pre>
         </Card>
 
-        <div className="mt-4 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-green-200">
+        <div className="mt-4 p-4 bg-cyan-50 dark:bg-cyan-950/50 border border-cyan-200 dark:border-cyan-800 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-cyan-100">
             <strong>✓ Web Dashboard:</strong> Once it's running, you can view the control panel at{" "}
             <a href="http://127.0.0.1:18789" className="text-[#3ED1FE] hover:underline font-mono">
               http://127.0.0.1:18789
@@ -463,11 +463,11 @@ export ANTHROPIC_API_KEY="sk-ant-..."
         <h3 className="font-semibold mb-3 text-lg flex items-center gap-2">
           ⭐ Telegram (RECOMMENDED - Easiest!)
         </h3>
-        <div className="mb-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-green-200 mb-3">
+        <div className="mb-6 p-4 bg-gray-50 dark:bg-gray-900/30 border border-gray-300 dark:border-gray-700 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-gray-200 mb-3">
             <strong>Why Telegram is best for beginners:</strong>
           </p>
-          <ul className="space-y-1 text-sm text-gray-900 dark:text-green-200">
+          <ul className="space-y-1 text-sm text-gray-900 dark:text-gray-200">
             <li className="flex gap-2">
               <span>✓</span>
               <span>Simplest setup — just create a bot through BotFather</span>
@@ -534,11 +534,11 @@ export ANTHROPIC_API_KEY="sk-ant-..."
         </ol>
 
         <h3 className="font-semibold mb-3 text-lg">WhatsApp (Advanced)</h3>
-        <div className="mb-4 p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-yellow-200 mb-2">
+        <div className="mb-4 p-4 bg-gray-100 dark:bg-gray-900/50 border-l-4 border-orange-300 dark:border-orange-800 border-r border-t border-b border-orange-300/50 dark:border-orange-800/50 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-orange-100 mb-2">
             <strong>⚠️ Heads up:</strong> WhatsApp has some quirks:
           </p>
-          <ul className="space-y-1 text-sm text-gray-900 dark:text-yellow-200">
+          <ul className="space-y-1 text-sm text-gray-900 dark:text-orange-100">
             <li className="flex gap-2">
               <span>•</span>
               <span>Messages come from YOUR own number, not a separate bot</span>
@@ -599,8 +599,8 @@ openclaw pairing approve whatsapp <code>`}</code>
           </pre>
         </Card>
 
-        <div className="mt-4 p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-yellow-200">
+        <div className="mt-4 p-4 bg-gray-100 dark:bg-gray-900/50 border-l-4 border-orange-300 dark:border-orange-800 border-r border-t border-b border-orange-300/50 dark:border-orange-800/50 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-orange-100">
             <strong>⚠️ Security Tip:</strong> Never approve pairing codes from unknown numbers. 
             This is your first line of defense against unauthorized access.
           </p>
@@ -647,8 +647,8 @@ openclaw pairing approve whatsapp <code>`}</code>
           </li>
         </ul>
 
-        <div className="mt-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-green-200">
+        <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-900/30 border border-gray-300 dark:border-gray-700 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-gray-200">
             <strong>💡 Pro tip:</strong> Your AI assistant can help configure itself! If you want to change settings, 
             add new features, or set up automations, just ask it. It has access to all the commands 
             and can walk you through everything.
@@ -733,8 +733,8 @@ openclaw pairing approve whatsapp <code>`}</code>
           </div>
         </div>
 
-        <div className="mt-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-green-200">
+        <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-900/30 border border-gray-300 dark:border-gray-700 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-gray-200">
             <strong>💡 Installing is easy:</strong> Just tell your assistant "Install the weather skill" or 
             "Help me set up Gmail integration" and it will guide you through everything. You don't need to know any commands!
           </p>
@@ -794,8 +794,8 @@ openclaw pairing approve whatsapp <code>`}</code>
           </Card>
         </div>
 
-        <div className="mt-6 p-4 bg-blue-950/20 border border-blue-900/50 rounded-lg">
-          <p className="text-sm text-gray-900 dark:text-blue-200">
+        <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-900/30 border border-gray-300 dark:border-gray-700 rounded-lg">
+          <p className="text-sm text-gray-900 dark:text-gray-200">
             <strong>💡 Installing skills is easy:</strong> Just tell your assistant "Install the gog skill" 
             or "Help me set up Google Calendar integration" and it will guide you through the process.
           </p>
