@@ -10,6 +10,8 @@ interface ArticleLayoutProps {
   icon?: string;
   iconComponent?: LucideIcon;
   children: ReactNode;
+  ctaTitle?: string;
+  ctaDescription?: string;
 }
 
 export function ArticleLayout({
@@ -18,6 +20,8 @@ export function ArticleLayout({
   icon,
   iconComponent: IconComponent,
   children,
+  ctaTitle,
+  ctaDescription,
 }: ArticleLayoutProps) {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
@@ -65,7 +69,7 @@ export function ArticleLayout({
 
       {/* Contact CTA */}
       <div className="mt-16">
-        <ContactCTA />
+        <ContactCTA title={ctaTitle} description={ctaDescription} />
       </div>
     </div>
   );

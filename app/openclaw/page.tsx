@@ -36,6 +36,8 @@ export default function OpenClawTutorial() {
       title="OpenClaw Setup Guide"
       description="Complete walkthrough for setting up AI automation on any platform"
       icon="/openclaw-icon.png"
+      ctaTitle="Want this set up for your business?"
+      ctaDescription="Reach out and we can help you get set up with AI agents"
     >
       {/* What is OpenClaw */}
       <section className="mb-12">

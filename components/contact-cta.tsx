@@ -1,13 +1,21 @@
 import Image from "next/image";
 
-export function ContactCTA() {
+interface ContactCTAProps {
+  title?: string;
+  description?: string;
+}
+
+export function ContactCTA({ 
+  title = "Need professional automation?",
+  description = "Reach out to stevie_builds"
+}: ContactCTAProps) {
   return (
     <div className="text-center py-10 px-6 rounded-2xl border border-gray-300 dark:border-gray-800 bg-gradient-to-br from-gray-100/50 dark:from-gray-900/50 to-transparent">
       <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-        Need professional automation?
+        {title}
       </h2>
       <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-        Reach out to stevie_builds
+        {description}
       </p>
       
       <div className="flex flex-col items-center gap-3">
