@@ -86,7 +86,7 @@ export default function Home() {
         {/* Main Content Tiles */}
         <div className="grid gap-4 mb-16">
           <LinkCard
-            href="https://wahlu.app"
+            href="https://wahlu.com"
             title="Wahlu"
             description="Affordable social media scheduler - Create once, post forever. Schedule Instagram, TikTok, YouTube, LinkedIn & Facebook for $7/month."
             icon={
