@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, LucideIcon } from "lucide-react";
 import { ReactNode } from "react";
+import { ContactCTA } from "./contact-cta";
 
 interface ArticleLayoutProps {
   title: string;
@@ -60,6 +61,11 @@ export function ArticleLayout({
       {/* Content */}
       <div className="article-content">
         {children}
+      </div>
+
+      {/* Contact CTA */}
+      <div className="mt-16">
+        <ContactCTA />
       </div>
     </div>
   );
