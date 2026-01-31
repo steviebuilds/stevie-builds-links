@@ -30,7 +30,7 @@ export function ContactCTA() {
         </a>
         
         <a
-          href="https://twitter.com/stevie_builds"
+          href="https://x.com/stevie_builds"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 px-6 py-3 rounded-xl bg-[#3ED1FE]/10 hover:bg-[#3ED1FE]/20 border border-[#3ED1FE]/30 hover:border-[#3ED1FE]/50 transition-all duration-300 hover:scale-105 group"

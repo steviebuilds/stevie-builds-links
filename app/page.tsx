@@ -32,7 +32,7 @@ export default function Home() {
           {/* Social Icons */}
           <div className="flex items-center justify-center gap-4 mb-4">
             <a
-              href="https://twitter.com/stevie_builds"
+              href="https://x.com/stevie_builds"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-[#3ED1FE]/10 hover:bg-[#3ED1FE]/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
