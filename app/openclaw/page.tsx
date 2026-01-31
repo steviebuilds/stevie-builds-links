@@ -1,8 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, Terminal, Smartphone, Shield, Zap } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "OpenClaw Setup Guide | Stevie Builds",
+  description: "Complete step-by-step tutorial for setting up OpenClaw AI automation. Learn how to install, configure, and connect WhatsApp, Telegram, Discord, and more.",
+  keywords: ["OpenClaw", "AI automation", "WhatsApp bot", "Telegram bot", "Discord bot", "automation tutorial"],
+  openGraph: {
+    title: "OpenClaw Setup Guide | Stevie Builds",
+    description: "Complete step-by-step tutorial for setting up OpenClaw AI automation",
+    type: "article",
+    images: [
+      {
+        url: "/openclaw-og.png",
+        width: 1200,
+        height: 630,
+        alt: "OpenClaw Setup Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OpenClaw Setup Guide | Stevie Builds",
+    description: "Complete step-by-step tutorial for setting up OpenClaw AI automation",
+    images: ["/openclaw-og.png"],
+    creator: "@stevie_builds",
+  },
+};
 
 export default function OpenClawTutorial() {
   return (
@@ -20,11 +47,11 @@ export default function OpenClawTutorial() {
       <div className="mb-12">
         <div className="flex items-center gap-4 mb-6">
           <Image
-            src="/openclaw-logo.svg"
+            src="/openclaw-icon.png"
             alt="OpenClaw"
             width={64}
             height={64}
-            className="w-16 h-16"
+            className="w-16 h-16 rounded-lg"
           />
           <div>
             <h1 className="text-4xl font-bold mb-2">OpenClaw Setup Guide</h1>

@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://steviebuilds.dev"),
   title: "Stevie Builds | Software Engineer & Automation Specialist",
   description: "Business automations, custom software solutions, and AI integrations by a full-stack software engineer.",
   keywords: ["automation", "software engineer", "OpenClaw", "business systems", "AI integration"],
@@ -23,6 +24,21 @@ export const metadata: Metadata = {
     title: "Stevie Builds | Software Engineer & Automation Specialist",
     description: "Business automations, custom software solutions, and AI integrations",
     type: "website",
+    images: [
+      {
+        url: "/openclaw-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Stevie Builds - Software Engineer & Automation Specialist",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stevie Builds | Software Engineer & Automation Specialist",
+    description: "Business automations, custom software solutions, and AI integrations",
+    images: ["/openclaw-og.png"],
+    creator: "@stevie_builds",
   },
 };
 

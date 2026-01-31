@@ -37,7 +37,7 @@ export default function Home() {
             description="Learn how to set up AI-powered automation for your business"
             icon={
               <Image
-                src="/openclaw-logo.svg"
+                src="/openclaw-icon.png"
                 alt="OpenClaw"
                 width={32}
                 height={32}
