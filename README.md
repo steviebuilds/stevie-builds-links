@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stevie Builds Links
 
-## Getting Started
+A minimal, beautiful link-in-bio site showcasing OpenClaw automation capabilities.
 
-First, run the development server:
+## 🎨 Design
 
+- **Dark theme** with brand color `#3ED1FE` (bright cyan)
+- **Mobile-optimized** responsive design
+- **Smooth transitions** and hover effects
+- **Modern UI** following current design trends
+
+## 📱 Pages
+
+### Home (`/`)
+Minimal link tree with single link to OpenClaw automation showcase.
+
+### OpenClaw (`/openclaw`)
+Beautiful article page featuring:
+- Hero section introducing OpenClaw
+- Breakdown of automation capabilities:
+  - Email triage & auto-response
+  - Receipt OCR & expense tracking
+  - Remote camera control & monitoring
+- Link to DIY tutorial by @ashen_one
+- Professional services CTA
+
+## 🚀 Deployment
+
+### Docker
+
+Build and run with Docker:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker build -t stevie-builds-links .
+docker run -p 3000:3000 stevie-builds-links
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or use docker-compose:
+```bash
+docker-compose up -d
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Coolify
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is ready for Coolify deployment:
+1. Connect your GitHub repository
+2. Coolify will automatically detect the Dockerfile
+3. Deploy with one click
 
-## Learn More
+## 🛠 Development
 
-To learn more about Next.js, take a look at the following resources:
+Install dependencies:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run development server:
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Build for production:
+```bash
+npm run build
+npm start
+```
 
-## Deploy on Vercel
+## 📦 Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Next.js 15** with App Router
+- **TypeScript**
+- **Tailwind CSS**
+- **Docker** for containerization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔗 Links
+
+- Tutorial: [OpenClaw Setup by @ashen_one](https://x.com/ashen_one/status/2017317310059421860)
+- Contact: [@stevie.builds](https://twitter.com/stevie.builds)
+
+## 📄 License
+
+© 2026 Stevie Builds. All rights reserved.
