@@ -926,38 +926,6 @@ npm update -g openclaw@latest`}</code>
           </li>
         </ul>
       </section>
-
-      {/* CTA */}
-      <Card className="p-8 border-[#3ED1FE]/30 bg-gradient-to-br from-[#3ED1FE]/10 to-transparent text-center">
-        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Need Help Getting Set Up?</h2>
-        <p className="text-gray-900 dark:text-gray-300 mb-6">
-          If you get stuck or want help with custom integrations and advanced automation 
-          workflows, I offer professional setup services.
-        </p>
-        <p className="text-gray-900 dark:text-gray-300 mb-6">
-          Reach out on Instagram or Twitter:
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href="https://instagram.com/stevie.builds"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-[#3ED1FE] hover:bg-[#3ED1FE]/90 text-black font-semibold rounded-lg transition-colors"
-          >
-            <span>📷</span>
-            <span>@stevie_builds</span>
-          </a>
-          <a
-            href="https://twitter.com/stevie_builds"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-[#3ED1FE] hover:bg-[#3ED1FE]/90 text-black font-semibold rounded-lg transition-colors"
-          >
-            <span>🐦</span>
-            <span>@stevie_builds</span>
-          </a>
-        </div>
-      </Card>
     </ArticleLayout>
   );
 }
