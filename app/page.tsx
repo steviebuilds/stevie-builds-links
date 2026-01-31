@@ -125,16 +125,25 @@ export default function Home() {
             Need Professional Automation?
           </h2>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            DM{" "}
+            DM @stevie_builds on{" "}
             <a
-              href="https://instagram.com/stevie_builds"
+              href="https://instagram.com/stevie.builds"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#3ED1FE] hover:underline font-medium"
             >
-              @stevie_builds
+              Instagram
             </a>
-            {" "}on Instagram for custom solutions
+            {" "}or{" "}
+            <a
+              href="https://twitter.com/stevie_builds"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#3ED1FE] hover:underline font-medium"
+            >
+              X
+            </a>
+            {" "}for custom solutions
           </p>
         </div>
       </div>
