@@ -12,12 +12,29 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-function getTimeBasedTheme(): "light" | "dark" {
-  const hour = new Date().getHours();
-  // Light: 6am-6pm, Dark: 6pm-6am
-  return hour >= 6 && hour < 18 ? "light" : "dark";
+/**
+ * Get the user's system theme preference
+ * Uses window.matchMedia to detect prefers-color-scheme
+ */
+function getSystemTheme(): "light" | "dark" {
+  if (typeof window !== "undefined" && window.matchMedia) {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  // Default to dark if we can't detect (SSR or old browsers)
+  return "dark";
 }
 
+/**
+ * ThemeProvider manages theme state and applies it to the DOM
+ * 
+ * Modes:
+ * - "light": Always light theme
+ * - "dark": Always dark theme
+ * - "auto": Follows system preference (default)
+ * 
+ * In auto mode, the theme automatically updates when the user changes
+ * their system preference (e.g., switching from light to dark mode in OS settings)
+ */
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<Theme>("auto");
   const [effectiveTheme, setEffectiveTheme] = useState<"light" | "dark">("dark");
@@ -30,10 +47,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
-  // Update effective theme when theme or time changes
+  // Update effective theme when theme changes or system preference changes
   useEffect(() => {
     const updateEffectiveTheme = () => {
-      const newEffectiveTheme = theme === "auto" ? getTimeBasedTheme() : theme;
+      const newEffectiveTheme = theme === "auto" ? getSystemTheme() : theme;
       setEffectiveTheme(newEffectiveTheme);
       
       // Update DOM
@@ -47,10 +64,17 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
     updateEffectiveTheme();
 
-    // If auto mode, check every minute for time changes
-    if (theme === "auto") {
-      const interval = setInterval(updateEffectiveTheme, 60000);
-      return () => clearInterval(interval);
+    // If auto mode, listen for system preference changes
+    if (theme === "auto" && window.matchMedia) {
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+      const handleChange = () => updateEffectiveTheme();
+      
+      // Modern browsers
+      mediaQuery.addEventListener("change", handleChange);
+      
+      return () => {
+        mediaQuery.removeEventListener("change", handleChange);
+      };
     }
   }, [theme]);
 
