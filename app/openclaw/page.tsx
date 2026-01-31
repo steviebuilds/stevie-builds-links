@@ -127,15 +127,15 @@ export default function OpenClawTutorial() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">What You'll Need</h2>
         
         <div className="mb-6 p-5 bg-green-950/20 border-2 border-green-900/50 rounded-lg">
-          <h3 className="font-bold text-lg mb-3 flex items-center gap-2 text-green-100">
+          <h3 className="font-bold text-lg mb-3 flex items-center gap-2 text-gray-900 dark:text-green-100">
             <span className="text-2xl">⚡</span>
             FIRST: Get a Claude Subscription (REQUIRED)
           </h3>
-          <p className="text-green-200 mb-3">
+          <p className="text-gray-900 dark:text-green-200 mb-3">
             <strong>Before you do anything else, you need an active Claude subscription.</strong> This is what powers OpenClaw's AI brain. 
             Without this, nothing will work.
           </p>
-          <ul className="space-y-2 text-green-200">
+          <ul className="space-y-2 text-gray-900 dark:text-green-200">
             <li className="flex items-start gap-2">
               <span className="text-[#3ED1FE] mt-1">1.</span>
               <span>Go to <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline font-semibold">claude.ai</a> and sign up for a Pro subscription</span>
@@ -184,10 +184,10 @@ export default function OpenClawTutorial() {
         
         <div className="mb-6 space-y-4">
           <div className="p-4 bg-blue-950/20 border border-blue-900/50 rounded-lg">
-            <p className="text-sm text-blue-200 mb-2">
+            <p className="text-sm text-gray-900 dark:text-blue-200 mb-2">
               <strong>🖥️ How to open your terminal:</strong>
             </p>
-            <ul className="space-y-1 text-sm text-blue-200">
+            <ul className="space-y-1 text-sm text-gray-900 dark:text-blue-200">
               <li className="flex gap-2">
                 <span>•</span>
                 <span><strong>Mac:</strong> Press <kbd className="px-2 py-1 bg-gray-800 rounded text-xs">Cmd + Space</kbd>, type "Terminal", press Enter</span>
@@ -204,13 +204,13 @@ export default function OpenClawTutorial() {
           </div>
 
           <div className="p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
-            <p className="text-sm text-yellow-200 mb-2">
+            <p className="text-sm text-gray-900 dark:text-yellow-200 mb-2">
               <strong>⚠️ Windows Users - Important!</strong>
             </p>
-            <p className="text-sm text-yellow-200 mb-3">
+            <p className="text-sm text-gray-900 dark:text-yellow-200 mb-3">
               OpenClaw doesn't work well on native Windows. You need to install WSL2 (Windows Subsystem for Linux) first:
             </p>
-            <ol className="space-y-2 text-sm text-yellow-200 ml-4">
+            <ol className="space-y-2 text-sm text-gray-900 dark:text-yellow-200 ml-4">
               <li>1. Open PowerShell as Administrator</li>
               <li>2. Run: <code className="bg-gray-900 px-2 py-1 rounded">wsl --install</code></li>
               <li>3. Restart your computer</li>
@@ -258,8 +258,8 @@ export default function OpenClawTutorial() {
         </Card>
 
         <div className="p-5 bg-green-950/20 border border-green-900/50 rounded-lg mb-6">
-          <h4 className="font-bold mb-2 text-green-100">What happens during onboarding:</h4>
-          <ul className="space-y-2 text-sm text-green-200">
+          <h4 className="font-bold mb-2 text-gray-900 dark:text-green-100">What happens during onboarding:</h4>
+          <ul className="space-y-2 text-sm text-gray-900 dark:text-green-200">
             <li className="flex gap-2">
               <span className="text-[#3ED1FE]">1.</span>
               <span>You'll choose <strong>"Anthropic"</strong> as your AI provider</span>
@@ -359,11 +359,11 @@ export default function OpenClawTutorial() {
           ✨ Option A: Claude Subscription (RECOMMENDED)
         </h3>
         <div className="mb-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-green-200 mb-3">
+          <p className="text-sm text-gray-900 dark:text-green-200 mb-3">
             <strong>Best for most people:</strong> This is cheaper and easier than API access. 
             Just like you'd pay for Netflix, you pay Claude for unlimited use.
           </p>
-          <ul className="space-y-2 text-sm text-green-200">
+          <ul className="space-y-2 text-sm text-gray-900 dark:text-green-200">
             <li className="flex gap-2">
               <span>•</span>
               <span><strong>Get a $100+ plan</strong> at <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">claude.ai</a> (the $20 plan runs out too fast for automation)</span>
@@ -409,7 +409,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
         </Card>
 
         <div className="mt-4 p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
-          <p className="text-sm text-yellow-200">
+          <p className="text-sm text-gray-900 dark:text-yellow-200">
             <strong>⚠️ Note:</strong> API usage is billed per message and can get expensive quickly if you're using OpenClaw frequently. Most people find a Claude subscription more economical.
           </p>
         </div>
@@ -442,7 +442,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
         </Card>
 
         <div className="mt-4 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-green-200">
+          <p className="text-sm text-gray-900 dark:text-green-200">
             <strong>✓ Web Dashboard:</strong> Once it's running, you can view the control panel at{" "}
             <a href="http://127.0.0.1:18789" className="text-[#3ED1FE] hover:underline font-mono">
               http://127.0.0.1:18789
@@ -464,10 +464,10 @@ export ANTHROPIC_API_KEY="sk-ant-..."
           ⭐ Telegram (RECOMMENDED - Easiest!)
         </h3>
         <div className="mb-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-green-200 mb-3">
+          <p className="text-sm text-gray-900 dark:text-green-200 mb-3">
             <strong>Why Telegram is best for beginners:</strong>
           </p>
-          <ul className="space-y-1 text-sm text-green-200">
+          <ul className="space-y-1 text-sm text-gray-900 dark:text-green-200">
             <li className="flex gap-2">
               <span>✓</span>
               <span>Simplest setup — just create a bot through BotFather</span>
@@ -535,10 +535,10 @@ export ANTHROPIC_API_KEY="sk-ant-..."
 
         <h3 className="font-semibold mb-3 text-lg">WhatsApp (Advanced)</h3>
         <div className="mb-4 p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
-          <p className="text-sm text-yellow-200 mb-2">
+          <p className="text-sm text-gray-900 dark:text-yellow-200 mb-2">
             <strong>⚠️ Heads up:</strong> WhatsApp has some quirks:
           </p>
-          <ul className="space-y-1 text-sm text-yellow-200">
+          <ul className="space-y-1 text-sm text-gray-900 dark:text-yellow-200">
             <li className="flex gap-2">
               <span>•</span>
               <span>Messages come from YOUR own number, not a separate bot</span>
@@ -600,7 +600,7 @@ openclaw pairing approve whatsapp <code>`}</code>
         </Card>
 
         <div className="mt-4 p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
-          <p className="text-sm text-yellow-200">
+          <p className="text-sm text-gray-900 dark:text-yellow-200">
             <strong>⚠️ Security Tip:</strong> Never approve pairing codes from unknown numbers. 
             This is your first line of defense against unauthorized access.
           </p>
@@ -648,7 +648,7 @@ openclaw pairing approve whatsapp <code>`}</code>
         </ul>
 
         <div className="mt-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-green-200">
+          <p className="text-sm text-gray-900 dark:text-green-200">
             <strong>💡 Pro tip:</strong> Your AI assistant can help configure itself! If you want to change settings, 
             add new features, or set up automations, just ask it. It has access to all the commands 
             and can walk you through everything.
@@ -734,7 +734,7 @@ openclaw pairing approve whatsapp <code>`}</code>
         </div>
 
         <div className="mt-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
-          <p className="text-sm text-green-200">
+          <p className="text-sm text-gray-900 dark:text-green-200">
             <strong>💡 Installing is easy:</strong> Just tell your assistant "Install the weather skill" or 
             "Help me set up Gmail integration" and it will guide you through everything. You don't need to know any commands!
           </p>
@@ -795,7 +795,7 @@ openclaw pairing approve whatsapp <code>`}</code>
         </div>
 
         <div className="mt-6 p-4 bg-blue-950/20 border border-blue-900/50 rounded-lg">
-          <p className="text-sm text-blue-200">
+          <p className="text-sm text-gray-900 dark:text-blue-200">
             <strong>💡 Installing skills is easy:</strong> Just tell your assistant "Install the gog skill" 
             or "Help me set up Google Calendar integration" and it will guide you through the process.
           </p>
@@ -934,14 +934,29 @@ npm update -g openclaw@latest`}</code>
           If you get stuck or want help with custom integrations and advanced automation 
           workflows, I offer professional setup services.
         </p>
-        <a
-          href="https://instagram.com/stevie_builds"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-8 py-3 bg-[#3ED1FE] hover:bg-[#3ED1FE]/90 text-black font-semibold rounded-lg transition-colors"
-        >
-          DM @stevie_builds on Instagram
-        </a>
+        <p className="text-gray-900 dark:text-gray-300 mb-6">
+          Reach out on Instagram or Twitter:
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="https://instagram.com/stevie.builds"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-[#3ED1FE] hover:bg-[#3ED1FE]/90 text-black font-semibold rounded-lg transition-colors"
+          >
+            <span>📷</span>
+            <span>@stevie.builds</span>
+          </a>
+          <a
+            href="https://twitter.com/stevie_builds"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-[#3ED1FE] hover:bg-[#3ED1FE]/90 text-black font-semibold rounded-lg transition-colors"
+          >
+            <span>🐦</span>
+            <span>@stevie_builds</span>
+          </a>
+        </div>
       </Card>
     </ArticleLayout>
   );
