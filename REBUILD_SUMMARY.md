@@ -15,8 +15,8 @@
 - ✅ Professional hero section with gradient text effect
 - ✅ Social media links with platform-specific handles:
   - Twitter: @stevie_builds
-  - Instagram: @stevie.builds
-  - TikTok: @stevie.builds
+  - Instagram: @stevie_builds
+  - TikTok: @stevie_builds
 - ✅ OpenClaw automation link with logo
 - ✅ Professional navigation bar
 - ✅ Clean, minimal footer (no corny marketing copy)
@@ -40,7 +40,7 @@
 - ✅ Professional article layout with proper sections
 - ✅ **Code snippets** with syntax highlighting (dark terminal style)
 - ✅ Info boxes (tips, warnings, success messages)
-- ✅ CTA at end: "DM @stevie.builds on Instagram"
+- ✅ CTA at end: "DM @stevie_builds on Instagram"
 - ✅ Based on actual OpenClaw documentation from docs.openclaw.ai
 
 ### 🧩 Components Created

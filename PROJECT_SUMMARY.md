@@ -154,7 +154,7 @@ stevie-builds-links/
 ## 🔗 Important Links
 
 - Tutorial: https://x.com/ashen_one/status/2017317310059421860
-- Contact: @stevie.builds on Twitter/X
+- Contact: @stevie_builds on Twitter/X
 
 ---
 

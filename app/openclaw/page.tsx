@@ -110,7 +110,7 @@ export default function OpenClawTutorial() {
 
       {/* Prerequisites */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Prerequisites</h2>
+        <h2 className="text-2xl font-bold mb-4">What You'll Need</h2>
         <ul className="space-y-2 text-gray-300">
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">•</span>
@@ -118,11 +118,11 @@ export default function OpenClawTutorial() {
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">•</span>
-            <span><strong>Terminal/Command Line</strong> - Basic familiarity recommended</span>
+            <span><strong>A Claude account</strong> - The easiest way to get started! Get a $100+ plan at <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">claude.ai</a> (the $20 plan runs out too quickly). This is cheaper and simpler than paying for API access.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">•</span>
-            <span><strong>Anthropic API Key</strong> - Get one at <a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">console.anthropic.com</a></span>
+            <span><strong>Advanced users:</strong> Alternatively, you can use an Anthropic API key from <a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">console.anthropic.com</a>, but this requires more setup and costs more for regular use.</span>
           </li>
         </ul>
       </section>
@@ -163,16 +163,40 @@ pnpm add -g openclaw@latest`}</code>
             then run these commands inside WSL.
           </p>
         </div>
+
+        <div className="mt-6 p-6 bg-gradient-to-br from-[#3ED1FE]/10 to-transparent border border-[#3ED1FE]/30 rounded-lg">
+          <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+            💡 Once OpenClaw is Running, Let IT Help You!
+          </h3>
+          <p className="text-gray-300 mb-4">
+            After installation, you don't need to memorize commands or configuration options. 
+            Just talk to your OpenClaw assistant! It can walk you through connecting channels, 
+            configuring settings, and setting up automations — like talking to a tech-savvy friend.
+          </p>
+          
+          <div className="bg-gray-950 border border-gray-800 rounded-lg p-4">
+            <p className="text-sm text-gray-400 mb-2">Try this setup prompt:</p>
+            <div className="bg-gray-900 p-3 rounded border border-gray-800">
+              <p className="text-sm text-gray-300 font-mono leading-relaxed">
+                "I just installed you! Can you help me get set up? I want to:
+                <br />- Connect you to [Telegram/Discord/WhatsApp]
+                <br />- Set up some basic automations
+                <br />- Understand what you can do for me
+                <br /><br />Walk me through each step and explain things in simple terms."
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <Separator className="my-12 bg-gray-800" />
 
       {/* Step 2: Onboarding */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 2: Run the Onboarding Wizard</h2>
+        <h2 className="text-2xl font-bold mb-4">Step 2: Run the Setup Wizard</h2>
         <p className="text-gray-300 mb-4">
-          The wizard will guide you through configuration and optionally install OpenClaw 
-          as a background service (recommended for always-on operation).
+          The friendly setup wizard will walk you through everything and can install OpenClaw 
+          to run in the background (so it's always ready when you need it).
         </p>
         
         <Card className="p-4 bg-gray-950 border-gray-800">
@@ -182,27 +206,27 @@ pnpm add -g openclaw@latest`}</code>
         </Card>
 
         <div className="mt-6">
-          <h3 className="font-semibold mb-3 text-lg">What the wizard configures:</h3>
+          <h3 className="font-semibold mb-3 text-lg">The wizard helps you set up:</h3>
           <ul className="space-y-2 text-gray-300">
             <li className="flex items-start gap-2">
               <span className="text-[#3ED1FE] mt-1">✓</span>
-              <span><strong>Authentication:</strong> API key or OAuth setup for AI providers</span>
+              <span><strong>Your AI connection:</strong> Link your Claude account or API key</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#3ED1FE] mt-1">✓</span>
-              <span><strong>Gateway settings:</strong> Port, token, and network configuration</span>
+              <span><strong>Basic settings:</strong> Technical stuff you don't need to worry about</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#3ED1FE] mt-1">✓</span>
-              <span><strong>Messaging channels:</strong> WhatsApp, Telegram, Discord, etc.</span>
+              <span><strong>Messaging apps:</strong> Connect Telegram, Discord, WhatsApp, etc.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#3ED1FE] mt-1">✓</span>
-              <span><strong>Security:</strong> Pairing defaults for DM access control</span>
+              <span><strong>Security:</strong> Control who can talk to your AI assistant</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#3ED1FE] mt-1">✓</span>
-              <span><strong>Workspace:</strong> Bootstrap files and optional skills</span>
+              <span><strong>Your workspace:</strong> Where your AI stores its memory and skills</span>
             </li>
           </ul>
         </div>
@@ -212,14 +236,45 @@ pnpm add -g openclaw@latest`}</code>
 
       {/* Step 3: Authentication */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 3: Configure AI Authentication</h2>
+        <h2 className="text-2xl font-bold mb-4">Step 3: Connect Your AI Brain</h2>
         <p className="text-gray-300 mb-4">
-          OpenClaw needs access to an AI provider. The recommended setup is using an 
-          Anthropic API key for Claude.
+          OpenClaw needs to connect to Claude to work its magic. Here's the easiest way:
         </p>
         
-        <h3 className="font-semibold mb-3">Option A: API Key (Recommended)</h3>
-        <ol className="space-y-3 text-gray-300 mb-6">
+        <h3 className="font-semibold mb-3 text-lg flex items-center gap-2">
+          ✨ Option A: Claude Subscription (RECOMMENDED)
+        </h3>
+        <div className="mb-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
+          <p className="text-sm text-green-200 mb-3">
+            <strong>Best for most people:</strong> This is cheaper and easier than API access. 
+            Just like you'd pay for Netflix, you pay Claude for unlimited use.
+          </p>
+          <ul className="space-y-2 text-sm text-green-200">
+            <li className="flex gap-2">
+              <span>•</span>
+              <span><strong>Get a $100+ plan</strong> at <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">claude.ai</a> (the $20 plan runs out too fast for automation)</span>
+            </li>
+            <li className="flex gap-2">
+              <span>•</span>
+              <span><strong>Way more cost-effective</strong> than paying per message</span>
+            </li>
+            <li className="flex gap-2">
+              <span>•</span>
+              <span><strong>No technical setup</strong> — just login and go</span>
+            </li>
+          </ul>
+        </div>
+        
+        <p className="text-gray-300 mb-3">
+          Once you have a Claude subscription, OpenClaw will use your credentials automatically. 
+          The onboarding wizard will guide you through the login.
+        </p>
+
+        <h3 className="font-semibold mb-3 text-lg mt-8">Option B: API Key (Advanced Users)</h3>
+        <p className="text-gray-300 mb-3">
+          If you're comfortable with API billing and want more control, you can use an Anthropic API key:
+        </p>
+        <ol className="space-y-3 text-gray-300 mb-4">
           <li className="flex gap-2">
             <span className="text-[#3ED1FE] font-bold">1.</span>
             <span>Go to <a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">console.anthropic.com</a> and create an API key</span>
@@ -230,7 +285,7 @@ pnpm add -g openclaw@latest`}</code>
           </li>
         </ol>
         
-        <Card className="p-4 bg-gray-950 border-gray-800 mb-6">
+        <Card className="p-4 bg-gray-950 border-gray-800">
           <pre className="text-sm text-gray-300 overflow-x-auto">
             <code>{`# Store your API key securely
 export ANTHROPIC_API_KEY="sk-ant-..."
@@ -239,27 +294,21 @@ export ANTHROPIC_API_KEY="sk-ant-..."
           </pre>
         </Card>
 
-        <h3 className="font-semibold mb-3">Option B: Claude Code OAuth</h3>
-        <p className="text-gray-300 mb-3">
-          If you have Claude Code installed with an active subscription, you can reuse 
-          those credentials:
-        </p>
-        
-        <Card className="p-4 bg-gray-950 border-gray-800">
-          <pre className="text-sm text-gray-300 overflow-x-auto">
-            <code>{`claude setup-token`}</code>
-          </pre>
-        </Card>
+        <div className="mt-4 p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
+          <p className="text-sm text-yellow-200">
+            <strong>⚠️ Note:</strong> API usage is billed per message and can get expensive quickly if you're using OpenClaw frequently. Most people find a Claude subscription more economical.
+          </p>
+        </div>
       </section>
 
       <Separator className="my-12 bg-gray-800" />
 
       {/* Step 4: Start the Gateway */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 4: Start the Gateway</h2>
+        <h2 className="text-2xl font-bold mb-4">Step 4: Make Sure OpenClaw is Running</h2>
         <p className="text-gray-300 mb-4">
-          If you installed the daemon during onboarding, the gateway should already be running. 
-          Check its status:
+          If you used the setup wizard, OpenClaw is probably already running in the background. 
+          Let's check:
         </p>
         
         <Card className="p-4 bg-gray-950 border-gray-800 mb-4">
@@ -269,7 +318,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
         </Card>
 
         <p className="text-gray-300 mb-4">
-          To start it manually (foreground mode):
+          If it's not running, you can start it:
         </p>
         
         <Card className="p-4 bg-gray-950 border-gray-800 mb-4">
@@ -280,7 +329,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
 
         <div className="mt-4 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
           <p className="text-sm text-green-200">
-            <strong>✓ Dashboard Access:</strong> Once running, access the web UI at{" "}
+            <strong>✓ Web Dashboard:</strong> Once it's running, you can view the control panel at{" "}
             <a href="http://127.0.0.1:18789" className="text-[#3ED1FE] hover:underline font-mono">
               http://127.0.0.1:18789
             </a>
@@ -293,10 +342,110 @@ export ANTHROPIC_API_KEY="sk-ant-..."
       {/* Step 5: Connect a Channel */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">Step 5: Connect a Messaging Channel</h2>
+        <p className="text-gray-300 mb-6">
+          Choose whichever platform you prefer. We've listed them from easiest to most complex:
+        </p>
         
-        <h3 className="font-semibold mb-3 text-lg">WhatsApp (Easiest to start)</h3>
+        <h3 className="font-semibold mb-3 text-lg flex items-center gap-2">
+          ⭐ Telegram (RECOMMENDED - Easiest!)
+        </h3>
+        <div className="mb-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
+          <p className="text-sm text-green-200 mb-3">
+            <strong>Why Telegram is best for beginners:</strong>
+          </p>
+          <ul className="space-y-1 text-sm text-green-200">
+            <li className="flex gap-2">
+              <span>✓</span>
+              <span>Simplest setup — just create a bot through BotFather</span>
+            </li>
+            <li className="flex gap-2">
+              <span>✓</span>
+              <span>OpenClaw appears as a separate contact, not your own messages</span>
+            </li>
+            <li className="flex gap-2">
+              <span>✓</span>
+              <span>You get proper notifications when your assistant replies</span>
+            </li>
+            <li className="flex gap-2">
+              <span>✓</span>
+              <span>Perfect for personal use</span>
+            </li>
+          </ul>
+        </div>
+        
+        <ol className="space-y-2 text-gray-300 mb-8">
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">1.</span>
+            <span>Message <a href="https://t.me/BotFather" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">@BotFather</a> on Telegram</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">2.</span>
+            <span>Send <code className="text-[#3ED1FE] bg-gray-900 px-2 py-1 rounded">/newbot</code> and follow the prompts to name your bot</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">3.</span>
+            <span>Copy the API token BotFather gives you</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">4.</span>
+            <span>Add it to your OpenClaw config (the wizard will help with this)</span>
+          </li>
+        </ol>
+
+        <h3 className="font-semibold mb-3 text-lg">Discord (Good for Teams)</h3>
         <p className="text-gray-300 mb-4">
-          Connect WhatsApp by scanning a QR code:
+          Discord requires creating a bot application, which is a bit more involved but great if you want to use OpenClaw in a server with friends or teammates.
+        </p>
+        <ol className="space-y-2 text-gray-300 mb-8">
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">1.</span>
+            <span>Go to <a href="https://discord.com/developers/applications" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">Discord Developer Portal</a></span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">2.</span>
+            <span>Click "New Application" and give it a name</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">3.</span>
+            <span>Go to the "Bot" tab and click "Add Bot"</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">4.</span>
+            <span>Copy the bot token and save it securely</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#3ED1FE] font-bold">5.</span>
+            <span>Use the OAuth2 URL generator to create an invite link for your server</span>
+          </li>
+        </ol>
+
+        <h3 className="font-semibold mb-3 text-lg">WhatsApp (Advanced)</h3>
+        <div className="mb-4 p-4 bg-yellow-950/20 border border-yellow-900/50 rounded-lg">
+          <p className="text-sm text-yellow-200 mb-2">
+            <strong>⚠️ Heads up:</strong> WhatsApp has some quirks:
+          </p>
+          <ul className="space-y-1 text-sm text-yellow-200">
+            <li className="flex gap-2">
+              <span>•</span>
+              <span>Messages come from YOUR own number, not a separate bot</span>
+            </li>
+            <li className="flex gap-2">
+              <span>•</span>
+              <span>You won't get notifications unless you check the chat (it's you texting yourself)</span>
+            </li>
+            <li className="flex gap-2">
+              <span>•</span>
+              <span>Works better if you give OpenClaw its own phone number</span>
+            </li>
+            <li className="flex gap-2">
+              <span>•</span>
+              <span>Setup is more complicated than Telegram or Discord</span>
+            </li>
+          </ul>
+        </div>
+        
+        <p className="text-gray-300 mb-4">
+          If you still want to use WhatsApp, here's how:
         </p>
         
         <Card className="p-4 bg-gray-950 border-gray-800 mb-4">
@@ -309,42 +458,6 @@ export ANTHROPIC_API_KEY="sk-ant-..."
           This will display a QR code. Open WhatsApp on your phone → <strong>Settings</strong> → 
           <strong> Linked Devices</strong> → <strong>Link a Device</strong> and scan the code.
         </p>
-
-        <h3 className="font-semibold mb-3 text-lg">Telegram</h3>
-        <ol className="space-y-2 text-gray-300 mb-6">
-          <li className="flex gap-2">
-            <span className="text-[#3ED1FE] font-bold">1.</span>
-            <span>Message <a href="https://t.me/BotFather" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">@BotFather</a> on Telegram</span>
-          </li>
-          <li className="flex gap-2">
-            <span className="text-[#3ED1FE] font-bold">2.</span>
-            <span>Send <code className="text-[#3ED1FE] bg-gray-900 px-2 py-1 rounded">/newbot</code> and follow the prompts</span>
-          </li>
-          <li className="flex gap-2">
-            <span className="text-[#3ED1FE] font-bold">3.</span>
-            <span>Copy the API token and add it to your OpenClaw config</span>
-          </li>
-        </ol>
-
-        <h3 className="font-semibold mb-3 text-lg">Discord</h3>
-        <ol className="space-y-2 text-gray-300">
-          <li className="flex gap-2">
-            <span className="text-[#3ED1FE] font-bold">1.</span>
-            <span>Go to <a href="https://discord.com/developers/applications" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">Discord Developer Portal</a></span>
-          </li>
-          <li className="flex gap-2">
-            <span className="text-[#3ED1FE] font-bold">2.</span>
-            <span>Create a new application and add a bot</span>
-          </li>
-          <li className="flex gap-2">
-            <span className="text-[#3ED1FE] font-bold">3.</span>
-            <span>Copy the bot token and configure it in OpenClaw</span>
-          </li>
-          <li className="flex gap-2">
-            <span className="text-[#3ED1FE] font-bold">4.</span>
-            <span>Use the OAuth2 URL generator to invite the bot to your server</span>
-          </li>
-        </ol>
       </section>
 
       <Separator className="my-12 bg-gray-800" />
@@ -384,25 +497,23 @@ openclaw pairing approve whatsapp <code>`}</code>
 
       {/* Step 7: First Automation */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 7: Try Your First Automation</h2>
+        <h2 className="text-2xl font-bold mb-4">Step 7: Start Chatting!</h2>
         <p className="text-gray-300 mb-4">
-          Once everything is set up, send a message to test it out:
+          You're all set! Just message your OpenClaw assistant on the platform you connected 
+          (Telegram, Discord, or WhatsApp). Talk to it like you would a helpful friend.
         </p>
         
-        <Card className="p-4 bg-gray-950 border-gray-800 mb-6">
-          <pre className="text-sm text-gray-300 overflow-x-auto">
-            <code>{`# Send a test message from CLI
-openclaw message send --target +1234567890 --message "Hello!"
+        <div className="mb-6 p-4 bg-[#3ED1FE]/10 border border-[#3ED1FE]/30 rounded-lg">
+          <p className="text-gray-300 mb-2">
+            <strong>First time?</strong> Try the setup prompt from earlier, or just say hi and ask what it can do!
+          </p>
+        </div>
 
-# Or just message your WhatsApp number that's paired`}</code>
-          </pre>
-        </Card>
-
-        <h3 className="font-semibold mb-3 text-lg">Example Automation Ideas:</h3>
+        <h3 className="font-semibold mb-3 text-lg">Things You Can Ask It To Do:</h3>
         <ul className="space-y-2 text-gray-300">
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">📧</span>
-            <span><strong>Email summaries:</strong> Ask "Summarize my unread emails"</span>
+            <span><strong>Email summaries:</strong> "Summarize my unread emails"</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">📅</span>
@@ -418,9 +529,17 @@ openclaw message send --target +1234567890 --message "Hello!"
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">🎯</span>
-            <span><strong>Task automation:</strong> Set up cron jobs, webhooks, and more</span>
+            <span><strong>Task automation:</strong> "Help me set up a daily morning briefing"</span>
           </li>
         </ul>
+
+        <div className="mt-6 p-4 bg-green-950/20 border border-green-900/50 rounded-lg">
+          <p className="text-sm text-green-200">
+            <strong>💡 Pro tip:</strong> Your AI assistant can help configure itself! If you want to change settings, 
+            add new features, or set up automations, just ask it. It has access to all the commands 
+            and can walk you through everything.
+          </p>
+        </div>
       </section>
 
       <Separator className="my-12 bg-gray-800" />
@@ -550,19 +669,18 @@ npm update -g openclaw@latest`}</code>
 
       {/* CTA */}
       <Card className="p-8 border-[#3ED1FE]/30 bg-gradient-to-br from-[#3ED1FE]/10 to-transparent text-center">
-        <h2 className="text-2xl font-bold mb-4">Need Professional Setup Assistance?</h2>
+        <h2 className="text-2xl font-bold mb-4">Need Help Getting Set Up?</h2>
         <p className="text-gray-300 mb-6">
-          Setting up OpenClaw can be complex. If you need help with installation, 
-          custom integrations, or advanced automation workflows, I offer professional 
-          setup services.
+          If you get stuck or want help with custom integrations and advanced automation 
+          workflows, I offer professional setup services.
         </p>
         <a
-          href="https://instagram.com/stevie.builds"
+          href="https://instagram.com/stevie_builds"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-8 py-3 bg-[#3ED1FE] hover:bg-[#3ED1FE]/90 text-black font-semibold rounded-lg transition-colors"
         >
-          DM @stevie.builds on Instagram
+          DM @stevie_builds on Instagram
         </a>
       </Card>
     </div>

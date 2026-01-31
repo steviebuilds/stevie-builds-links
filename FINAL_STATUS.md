@@ -18,8 +18,8 @@ Professional rebuild of steviebuilds.dev is **100% complete** and ready for depl
 - **Link Cards** (shadcn/ui components)
   - OpenClaw Automation (with high-quality icon)
   - Twitter: @stevie_builds
-  - Instagram: @stevie.builds
-  - TikTok: @stevie.builds
+  - Instagram: @stevie_builds
+  - TikTok: @stevie_builds
   - All with hover effects and smooth animations
 
 - **Call-to-Action**

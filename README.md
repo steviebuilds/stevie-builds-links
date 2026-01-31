@@ -74,7 +74,7 @@ npm start
 ## 🔗 Links
 
 - Tutorial: [OpenClaw Setup by @ashen_one](https://x.com/ashen_one/status/2017317310059421860)
-- Contact: [@stevie.builds](https://twitter.com/stevie.builds)
+- Contact: [@stevie_builds](https://twitter.com/stevie_builds)
 
 ## 📄 License
 
