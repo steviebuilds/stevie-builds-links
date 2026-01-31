@@ -10,7 +10,7 @@ export default function Home() {
         <div className="text-center mb-16">
           <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-[#3ED1FE]/30">
             <Image
-              src="/profile.jpg"
+              src="/profile.png"
               alt="Stevie Builds"
               fill
               className="object-cover"
