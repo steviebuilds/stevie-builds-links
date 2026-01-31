@@ -17,13 +17,13 @@ export default function Home() {
               priority
             />
           </div>
-          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-white via-[#3ED1FE] to-white bg-clip-text text-transparent">
-            Stevie Builds
+          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-gray-900 via-[#3ED1FE] to-gray-900 dark:from-white dark:via-[#3ED1FE] dark:to-white bg-clip-text text-transparent">
+            @stevie_builds
           </h1>
-          <p className="text-xl text-gray-400 mb-6">
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
             Software Engineer & Automation Specialist
           </p>
-          <p className="text-gray-500 max-w-xl mx-auto mb-8">
+          <p className="text-gray-500 dark:text-gray-500 max-w-xl mx-auto mb-8">
             Building intelligent automation systems and custom software solutions. 
             Specializing in AI integrations, business process automation, and full-stack development.
           </p>
@@ -90,13 +90,15 @@ export default function Home() {
             title="Wahlu"
             description="Affordable social media scheduler - Create once, post forever. Schedule Instagram, TikTok, YouTube, LinkedIn & Facebook for $7/month."
             icon={
-              <Image
-                src="/wahlu-logo.png"
-                alt="Wahlu"
-                width={32}
-                height={32}
-                className="w-8 h-8"
-              />
+              <div className="bg-white p-2 rounded-lg">
+                <Image
+                  src="/wahlu-logo.png"
+                  alt="Wahlu"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8"
+                />
+              </div>
             }
             external
           />
@@ -118,11 +120,11 @@ export default function Home() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center py-8 px-6 rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/50 to-transparent">
-          <h2 className="text-2xl font-bold mb-3 text-white">
+        <div className="text-center py-8 px-6 rounded-2xl border border-gray-300 dark:border-gray-800 bg-gradient-to-br from-gray-100/50 dark:from-gray-900/50 to-transparent">
+          <h2 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">
             Need Professional Automation?
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
             DM{" "}
             <a
               href="https://instagram.com/stevie_builds"

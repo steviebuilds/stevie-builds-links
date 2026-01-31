@@ -26,11 +26,11 @@ export function LinkCard({ href, title, description, icon, external = false }: L
                 </div>
               )}
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-white group-hover:text-[#3ED1FE] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-[#3ED1FE] transition-colors">
                   {title}
                 </h3>
                 {description && (
-                  <p className="text-sm text-gray-400 mt-1 line-clamp-2">{description}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-2">{description}</p>
                 )}
               </div>
             </div>

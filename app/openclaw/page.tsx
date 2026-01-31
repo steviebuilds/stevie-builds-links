@@ -37,7 +37,7 @@ export default function OpenClawTutorial() {
       {/* Back Button */}
       <Link 
         href="/"
-        className="inline-flex items-center gap-2 text-gray-400 hover:text-[#3ED1FE] transition-colors mb-8"
+        className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[#3ED1FE] transition-colors mb-8"
       >
         <ArrowLeft className="w-4 h-4" />
         Back to Home
@@ -54,8 +54,8 @@ export default function OpenClawTutorial() {
             className="w-16 h-16 rounded-lg"
           />
           <div>
-            <h1 className="text-4xl font-bold mb-2">OpenClaw Setup Guide</h1>
-            <p className="text-gray-400">
+            <h1 className="text-4xl font-bold mb-2 text-gray-900 dark:text-white">OpenClaw Setup Guide</h1>
+            <p className="text-gray-600 dark:text-gray-400">
               Complete walkthrough for setting up AI automation on any platform
             </p>
           </div>
@@ -64,49 +64,49 @@ export default function OpenClawTutorial() {
 
       {/* What is OpenClaw */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">What is OpenClaw?</h2>
-        <p className="text-gray-300 mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">What is OpenClaw?</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           OpenClaw is a powerful automation gateway that connects WhatsApp, Telegram, Discord, 
           and iMessage to AI agents. It's like having a personal AI assistant that can respond 
           to messages, automate tasks, and integrate with your existing tools.
         </p>
         
         <div className="grid md:grid-cols-2 gap-4 mt-6">
-          <Card className="p-6 border-gray-800 bg-gray-900/50">
+          <Card className="p-6 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <Smartphone className="w-8 h-8 text-[#3ED1FE] mb-3" />
-            <h3 className="font-semibold mb-2">Multi-Platform</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">Multi-Platform</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
               WhatsApp, Telegram, Discord, iMessage - all in one place
             </p>
           </Card>
           
-          <Card className="p-6 border-gray-800 bg-gray-900/50">
+          <Card className="p-6 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <Shield className="w-8 h-8 text-[#3ED1FE] mb-3" />
-            <h3 className="font-semibold mb-2">Secure & Private</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">Secure & Private</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
               Self-hosted, encrypted, with pairing-based access control
             </p>
           </Card>
           
-          <Card className="p-6 border-gray-800 bg-gray-900/50">
+          <Card className="p-6 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <Zap className="w-8 h-8 text-[#3ED1FE] mb-3" />
-            <h3 className="font-semibold mb-2">AI-Powered</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">AI-Powered</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
               Powered by Claude, with support for multiple AI providers
             </p>
           </Card>
           
-          <Card className="p-6 border-gray-800 bg-gray-900/50">
+          <Card className="p-6 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <Terminal className="w-8 h-8 text-[#3ED1FE] mb-3" />
-            <h3 className="font-semibold mb-2">Developer-Friendly</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">Developer-Friendly</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
               CLI-first with extensive configuration options
             </p>
           </Card>
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* The Best Part */}
       <section className="mb-12">
@@ -145,11 +145,11 @@ export default function OpenClawTutorial() {
         </Card>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Prerequisites */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">What You'll Need</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">What You'll Need</h2>
         <ul className="space-y-2 text-gray-300">
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">•</span>
@@ -166,12 +166,12 @@ export default function OpenClawTutorial() {
         </ul>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Step 1: Installation */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 1: Installation</h2>
-        <p className="text-gray-300 mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Step 1: Installation</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           The fastest way to get started is using the official install script:
         </p>
         
@@ -207,7 +207,7 @@ pnpm add -g openclaw@latest`}</code>
           <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
             💡 Once OpenClaw is Running, Let IT Help You!
           </h3>
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-700 dark:text-gray-300 mb-4">
             After installation, you don't need to memorize commands or configuration options. 
             Just talk to your OpenClaw assistant! It can walk you through connecting channels, 
             configuring settings, and setting up automations — like talking to a tech-savvy friend.
@@ -228,12 +228,12 @@ pnpm add -g openclaw@latest`}</code>
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Step 2: Onboarding */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 2: Run the Setup Wizard</h2>
-        <p className="text-gray-300 mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Step 2: Run the Setup Wizard</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           The friendly setup wizard will walk you through everything and can install OpenClaw 
           to run in the background (so it's always ready when you need it).
         </p>
@@ -271,12 +271,12 @@ pnpm add -g openclaw@latest`}</code>
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Step 3: Authentication */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 3: Connect Your AI Brain</h2>
-        <p className="text-gray-300 mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Step 3: Connect Your AI Brain</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           OpenClaw needs to connect to Claude to work its magic. Here's the easiest way:
         </p>
         
@@ -304,13 +304,13 @@ pnpm add -g openclaw@latest`}</code>
           </ul>
         </div>
         
-        <p className="text-gray-300 mb-3">
+        <p className="text-gray-700 dark:text-gray-300 mb-3">
           Once you have a Claude subscription, OpenClaw will use your credentials automatically. 
           The onboarding wizard will guide you through the login.
         </p>
 
         <h3 className="font-semibold mb-3 text-lg mt-8">Option B: API Key (Advanced Users)</h3>
-        <p className="text-gray-300 mb-3">
+        <p className="text-gray-700 dark:text-gray-300 mb-3">
           If you're comfortable with API billing and want more control, you can use an Anthropic API key:
         </p>
         <ol className="space-y-3 text-gray-300 mb-4">
@@ -340,12 +340,12 @@ export ANTHROPIC_API_KEY="sk-ant-..."
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Step 4: Start the Gateway */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 4: Make Sure OpenClaw is Running</h2>
-        <p className="text-gray-300 mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Step 4: Make Sure OpenClaw is Running</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           If you used the setup wizard, OpenClaw is probably already running in the background. 
           Let's check:
         </p>
@@ -356,7 +356,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
           </pre>
         </Card>
 
-        <p className="text-gray-300 mb-4">
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           If it's not running, you can start it:
         </p>
         
@@ -376,12 +376,12 @@ export ANTHROPIC_API_KEY="sk-ant-..."
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Step 5: Connect a Channel */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 5: Connect a Messaging Channel</h2>
-        <p className="text-gray-300 mb-6">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Step 5: Connect a Messaging Channel</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-6">
           Choose whichever platform you prefer. We've listed them from easiest to most complex:
         </p>
         
@@ -432,7 +432,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
         </ol>
 
         <h3 className="font-semibold mb-3 text-lg">Discord (Good for Teams)</h3>
-        <p className="text-gray-300 mb-4">
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           Discord requires creating a bot application, which is a bit more involved but great if you want to use OpenClaw in a server with friends or teammates.
         </p>
         <ol className="space-y-2 text-gray-300 mb-8">
@@ -483,7 +483,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
           </ul>
         </div>
         
-        <p className="text-gray-300 mb-4">
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           If you still want to use WhatsApp, here's how:
         </p>
         
@@ -493,23 +493,23 @@ export ANTHROPIC_API_KEY="sk-ant-..."
           </pre>
         </Card>
 
-        <p className="text-gray-300 mb-6">
+        <p className="text-gray-700 dark:text-gray-300 mb-6">
           This will display a QR code. Open WhatsApp on your phone → <strong>Settings</strong> → 
           <strong> Linked Devices</strong> → <strong>Link a Device</strong> and scan the code.
         </p>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Step 6: Security & Pairing */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 6: Approve Pairing Requests</h2>
-        <p className="text-gray-300 mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Step 6: Approve Pairing Requests</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           By default, OpenClaw requires pairing approval for new DM conversations. 
           This prevents unauthorized access.
         </p>
         
-        <p className="text-gray-300 mb-4">
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           When you send your first message, OpenClaw will respond with a pairing code. 
           Approve it from the command line:
         </p>
@@ -532,18 +532,18 @@ openclaw pairing approve whatsapp <code>`}</code>
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Step 7: First Automation */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Step 7: Start Chatting!</h2>
-        <p className="text-gray-300 mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Step 7: Start Chatting!</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           You're all set! Just message your OpenClaw assistant on the platform you connected 
           (Telegram, Discord, or WhatsApp). Talk to it like you would a helpful friend.
         </p>
         
         <div className="mb-6 p-4 bg-[#3ED1FE]/10 border border-[#3ED1FE]/30 rounded-lg">
-          <p className="text-gray-300 mb-2">
+          <p className="text-gray-700 dark:text-gray-300 mb-2">
             <strong>First time?</strong> Try the setup prompt from earlier, or just say hi and ask what it can do!
           </p>
         </div>
@@ -581,18 +581,18 @@ openclaw pairing approve whatsapp <code>`}</code>
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Recommended Skills */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Recommended Skills to Install</h2>
-        <p className="text-gray-300 mb-6">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Recommended Skills to Install</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-6">
           OpenClaw becomes more powerful with skills. Here are some useful ones to get started. 
           You can ask your assistant to help install any of these!
         </p>
         
         <div className="grid md:grid-cols-2 gap-4">
-          <Card className="p-5 border-gray-800 bg-gray-900/50">
+          <Card className="p-5 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
               <span className="text-2xl">📧</span>
               gog (Google Workspace)
@@ -603,7 +603,7 @@ openclaw pairing approve whatsapp <code>`}</code>
             </p>
           </Card>
 
-          <Card className="p-5 border-gray-800 bg-gray-900/50">
+          <Card className="p-5 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
               <span className="text-2xl">🌤️</span>
               weather
@@ -614,7 +614,7 @@ openclaw pairing approve whatsapp <code>`}</code>
             </p>
           </Card>
 
-          <Card className="p-5 border-gray-800 bg-gray-900/50">
+          <Card className="p-5 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
               <span className="text-2xl">🐙</span>
               github
@@ -624,7 +624,7 @@ openclaw pairing approve whatsapp <code>`}</code>
             </p>
           </Card>
 
-          <Card className="p-5 border-gray-800 bg-gray-900/50">
+          <Card className="p-5 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
               <span className="text-2xl">⏰</span>
               remind-me
@@ -643,12 +643,12 @@ openclaw pairing approve whatsapp <code>`}</code>
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Advanced Configuration */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Advanced Configuration</h2>
-        <p className="text-gray-300 mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Advanced Configuration</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           Your configuration lives at <code className="text-[#3ED1FE] bg-gray-900 px-2 py-1 rounded">~/.openclaw/openclaw.json</code>
         </p>
         
@@ -694,14 +694,14 @@ npm update -g openclaw@latest`}</code>
         </Card>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Troubleshooting */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Troubleshooting</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Troubleshooting</h2>
         
         <div className="space-y-4">
-          <Card className="p-4 border-gray-800 bg-gray-900/50">
+          <Card className="p-4 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <h3 className="font-semibold mb-2">Gateway won't start</h3>
             <p className="text-sm text-gray-400 mb-2">
               Check if another process is using port 18789:
@@ -711,7 +711,7 @@ npm update -g openclaw@latest`}</code>
             </code>
           </Card>
 
-          <Card className="p-4 border-gray-800 bg-gray-900/50">
+          <Card className="p-4 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <h3 className="font-semibold mb-2">WhatsApp QR won't scan</h3>
             <p className="text-sm text-gray-400">
               Make sure you're using WhatsApp's "Link a Device" feature, not the regular QR scanner. 
@@ -719,7 +719,7 @@ npm update -g openclaw@latest`}</code>
             </p>
           </Card>
 
-          <Card className="p-4 border-gray-800 bg-gray-900/50">
+          <Card className="p-4 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <h3 className="font-semibold mb-2">Agent not responding</h3>
             <p className="text-sm text-gray-400 mb-2">
               Verify authentication is configured:
@@ -732,7 +732,7 @@ npm update -g openclaw@latest`}</code>
             </p>
           </Card>
 
-          <Card className="p-4 border-gray-800 bg-gray-900/50">
+          <Card className="p-4 border-gray-300 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50">
             <h3 className="font-semibold mb-2">Permission errors</h3>
             <p className="text-sm text-gray-400">
               Check your pairing status and approve if needed. By default, new DMs require approval.
@@ -741,11 +741,11 @@ npm update -g openclaw@latest`}</code>
         </div>
       </section>
 
-      <Separator className="my-12 bg-gray-800" />
+      <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />
 
       {/* Resources */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Additional Resources</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Additional Resources</h2>
         <ul className="space-y-2 text-gray-300">
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">📚</span>
@@ -770,8 +770,8 @@ npm update -g openclaw@latest`}</code>
 
       {/* CTA */}
       <Card className="p-8 border-[#3ED1FE]/30 bg-gradient-to-br from-[#3ED1FE]/10 to-transparent text-center">
-        <h2 className="text-2xl font-bold mb-4">Need Help Getting Set Up?</h2>
-        <p className="text-gray-300 mb-6">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Need Help Getting Set Up?</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-6">
           If you get stuck or want help with custom integrations and advanced automation 
           workflows, I offer professional setup services.
         </p>
