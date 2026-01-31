@@ -1,0 +1,9 @@
+services:
+  web-server:
+    build: .
+    container_name: stevie-links
+    restart: always
+    expose:
+      - '3000'
+    environment:
+      - NODE_ENV=production
