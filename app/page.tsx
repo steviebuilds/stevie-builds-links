@@ -10,7 +10,7 @@ export default function Home() {
         <div className="text-center mb-16">
           <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-[#3ED1FE]/30">
             <Image
-              src="/profile.png"
+              src="/profile.webp"
               alt="Stevie Builds"
               fill
               className="object-cover"
@@ -55,16 +55,16 @@ export default function Home() {
           />
 
           <LinkCard
-            href="https://instagram.com/stevie.builds"
-            title="@stevie.builds"
+            href="https://instagram.com/stevie_builds"
+            title="@stevie_builds"
             description="Behind-the-scenes content and tutorials"
             icon={<Instagram className="w-6 h-6 text-[#3ED1FE]" />}
             external
           />
 
           <LinkCard
-            href="https://tiktok.com/@stevie.builds"
-            title="@stevie.builds"
+            href="https://tiktok.com/@stevie_builds"
+            title="@stevie_builds"
             description="Quick automation demos and tech content"
             icon={<Video className="w-6 h-6 text-[#3ED1FE]" />}
             external
@@ -79,12 +79,12 @@ export default function Home() {
           <p className="text-gray-400 mb-4">
             DM{" "}
             <a
-              href="https://instagram.com/stevie.builds"
+              href="https://instagram.com/stevie_builds"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#3ED1FE] hover:underline font-medium"
             >
-              @stevie.builds
+              @stevie_builds
             </a>
             {" "}on Instagram for custom solutions
           </p>
