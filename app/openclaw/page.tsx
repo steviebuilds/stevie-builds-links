@@ -150,20 +150,55 @@ export default function OpenClawTutorial() {
       {/* Prerequisites */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">What You'll Need</h2>
+        
+        <div className="mb-6 p-5 bg-green-950/20 border-2 border-green-900/50 rounded-lg">
+          <h3 className="font-bold text-lg mb-3 flex items-center gap-2 text-green-100">
+            <span className="text-2xl">⚡</span>
+            FIRST: Get a Claude Subscription (REQUIRED)
+          </h3>
+          <p className="text-green-200 mb-3">
+            <strong>Before you do anything else, you need an active Claude subscription.</strong> This is what powers OpenClaw's AI brain. 
+            Without this, nothing will work.
+          </p>
+          <ul className="space-y-2 text-green-200">
+            <li className="flex items-start gap-2">
+              <span className="text-[#3ED1FE] mt-1">1.</span>
+              <span>Go to <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline font-semibold">claude.ai</a> and sign up for a Pro subscription</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#3ED1FE] mt-1">2.</span>
+              <span><strong>Get the $100+ plan</strong> (not the $20 plan — it runs out too fast for automation)</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#3ED1FE] mt-1">3.</span>
+              <span>During OpenClaw setup, you'll choose <strong>"Anthropic"</strong> as your provider and <strong>"Use existing subscription"</strong></span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#3ED1FE] mt-1">4.</span>
+              <span>No API key needed! OpenClaw will use your Claude Pro login automatically</span>
+            </li>
+          </ul>
+        </div>
+
+        <h3 className="font-semibold mb-3 text-lg text-gray-900 dark:text-white">Everything Else You Need:</h3>
         <ul className="space-y-2 text-gray-300">
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">•</span>
-            <span><strong>Node.js 22 or higher</strong> - Download from <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">nodejs.org</a></span>
+            <span><strong>Node.js 22 or higher</strong> - Don't worry, we'll show you how to install this in the next step</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[#3ED1FE] mt-1">•</span>
-            <span><strong>A Claude account</strong> - The easiest way to get started! Get a $100+ plan at <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">claude.ai</a> (the $20 plan runs out too quickly). This is cheaper and simpler than paying for API access.</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="text-[#3ED1FE] mt-1">•</span>
-            <span><strong>Advanced users:</strong> Alternatively, you can use an Anthropic API key from <a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">console.anthropic.com</a>, but this requires more setup and costs more for regular use.</span>
+            <span><strong>A terminal app</strong> - Mac/Linux: already have it. Windows: use WSL2 (we'll explain below)</span>
           </li>
         </ul>
+
+        <div className="mt-4 p-4 bg-gray-800/30 border border-gray-700 rounded-lg">
+          <p className="text-sm text-gray-400">
+            <strong>For advanced users:</strong> If you prefer to use an Anthropic API key instead of a subscription, 
+            you can get one from <a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer" className="text-[#3ED1FE] hover:underline">console.anthropic.com</a>. 
+            However, this costs more for regular use and requires more technical setup. Most people should stick with the subscription.
+          </p>
+        </div>
       </section>
 
       <Separator className="my-12 bg-gray-300 dark:bg-gray-800" />

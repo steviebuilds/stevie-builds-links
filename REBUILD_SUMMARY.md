@@ -119,6 +119,14 @@ stevie-builds-links/
 
 ## Latest Updates (Jan 31, 2026)
 
+### ✅ Theme System Updated
+
+**System Preference Support:**
+- Auto mode now follows user's OS theme (light/dark)
+- Real-time updates when system preference changes
+- Uses `prefers-color-scheme` media query
+- No time-based logic - pure system detection
+
 ### ✅ Final Polish Complete
 
 **High-Quality Assets:**

@@ -6,6 +6,21 @@ Professional rebuild of steviebuilds.dev is **100% complete** and ready for depl
 
 ---
 
+## 🎨 Theme System (Updated Jan 31, 2026)
+
+**System Preference Support:**
+- Auto mode now follows user's OS theme preference (light/dark)
+- Automatically updates when user changes system settings
+- No time-based logic - pure system preference detection
+- Real-time switching using `prefers-color-scheme` media query
+
+**Available Modes:**
+- `light` - Always light theme
+- `dark` - Always dark theme
+- `auto` - Follows system preference (default)
+
+---
+
 ## 📦 What You're Getting
 
 ### Homepage (`/`)
