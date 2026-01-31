@@ -945,7 +945,7 @@ npm update -g openclaw@latest`}</code>
             className="inline-flex items-center gap-2 px-8 py-3 bg-[#3ED1FE] hover:bg-[#3ED1FE]/90 text-black font-semibold rounded-lg transition-colors"
           >
             <span>📷</span>
-            <span>@stevie.builds</span>
+            <span>@stevie_builds</span>
           </a>
           <a
             href="https://twitter.com/stevie_builds"
