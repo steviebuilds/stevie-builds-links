@@ -1,80 +1,187 @@
-# Stevie Builds Links
+# Hive Dashboard - OpenClaw Mission Control
 
-A minimal, beautiful link-in-bio site showcasing OpenClaw automation capabilities.
+A real-time dashboard for monitoring and managing OpenClaw agents, sessions, and activities.
 
-## 🎨 Design
+## 🎯 Features
 
-- **Dark theme** with brand color `#3ED1FE` (bright cyan)
-- **Mobile-optimized** responsive design
-- **Smooth transitions** and hover effects
-- **Modern UI** following current design trends
+- **Live Agent Status** - See all active agents and their current state
+- **Session Monitoring** - Track active sessions across all agents
+- **Real-Time Activity Feed** - Stream live updates as they happen
+- **WebSocket Connection** - Direct connection to OpenClaw gateway
+- **Auto-Reconnect** - Automatic reconnection if connection drops
 
-## 📱 Pages
+## 🚀 Quick Start
 
-### Home (`/`)
-Minimal link tree with single link to OpenClaw automation showcase.
+### Prerequisites
 
-### OpenClaw (`/openclaw`)
-Beautiful article page featuring:
-- Hero section introducing OpenClaw
-- Breakdown of automation capabilities:
-  - Email triage & auto-response
-  - Receipt OCR & expense tracking
-  - Remote camera control & monitoring
-- Link to DIY tutorial by @ashen_one
-- Professional services CTA
+1. **OpenClaw gateway must be running**
+   ```bash
+   openclaw gateway status
+   # If not running:
+   openclaw gateway start
+   ```
 
-## 🚀 Deployment
+2. **Node.js 18+** installed
 
-### Docker
+### Setup
 
-Build and run with Docker:
-```bash
-docker build -t stevie-builds-links .
-docker run -p 3000:3000 stevie-builds-links
-```
+1. **Clone and install dependencies**
+   ```bash
+   cd ~/clawd/stevie-builds-links
+   npm install
+   ```
 
-Or use docker-compose:
-```bash
-docker-compose up -d
-```
+2. **Configure environment**
+   
+   The `.env.local` file is already configured with:
+   - Gateway URL: `http://127.0.0.1:18789`
+   - Auth token from your OpenClaw config
+   
+   If you need to change these, edit `.env.local`:
+   ```bash
+   NEXT_PUBLIC_OPENCLAW_GATEWAY_URL=http://127.0.0.1:18789
+   NEXT_PUBLIC_OPENCLAW_TOKEN=your-token-here
+   ```
 
-### Coolify
+   To find your token:
+   ```bash
+   cat ~/.openclaw/openclaw.json | grep -A 3 '"auth"'
+   ```
 
-This project is ready for Coolify deployment:
-1. Connect your GitHub repository
-2. Coolify will automatically detect the Dockerfile
-3. Deploy with one click
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the dashboard**
+   
+   Visit [http://localhost:3000/dashboard](http://localhost:3000/dashboard)
+
+## 📊 Dashboard Features
+
+### Agent Cards
+Each agent shows:
+- Current status (Online/Busy/Offline)
+- Active sessions
+- Session details (channel, label, status)
+- Last seen timestamp
+
+### Activity Feed
+Live stream of:
+- Messages sent/received
+- Tool calls executed
+- Agent thinking events
+- Session start/end events
+
+### Connection Status
+- Real-time connection indicator in header
+- Auto-reconnect on disconnect
+- Error alerts with troubleshooting tips
+
+## 🔧 Troubleshooting
+
+### Dashboard shows "Disconnected"
+
+1. **Check gateway is running:**
+   ```bash
+   openclaw gateway status
+   ```
+
+2. **Verify gateway port:**
+   ```bash
+   netstat -an | grep 18789
+   # or
+   lsof -i :18789
+   ```
+
+3. **Check token is correct:**
+   ```bash
+   cat ~/.openclaw/openclaw.json | grep -A 3 '"auth"'
+   ```
+
+### No agents showing
+
+- Agents only appear when they have active sessions
+- Try starting a conversation with your OpenClaw agent
+- Check that sessions are running:
+  ```bash
+  openclaw sessions list
+  ```
+
+### WebSocket connection fails
+
+- Make sure you're accessing via `http://localhost:3000` (not `https://`)
+- Check browser console for detailed error messages
+- Verify no firewall is blocking WebSocket connections
 
 ## 🛠 Development
 
-Install dependencies:
-```bash
-npm install
+### Project Structure
+
+```
+├── app/
+│   ├── dashboard/         # Dashboard page
+│   │   └── page.tsx
+│   └── layout.tsx
+├── lib/
+│   └── openclaw.ts       # OpenClaw client & WebSocket service
+├── components/
+│   └── ui/               # Reusable UI components
+└── .env.local            # Environment configuration
 ```
 
-Run development server:
-```bash
-npm run dev
+### Key Files
+
+- **`lib/openclaw.ts`** - OpenClaw gateway client with WebSocket support
+- **`app/dashboard/page.tsx`** - Main dashboard UI
+- **`.env.local`** - Configuration (gateway URL & token)
+
+### Adding New Features
+
+The `OpenClawClient` class in `lib/openclaw.ts` provides:
+
+```typescript
+// Connect to gateway
+await client.connect();
+
+// Get agents
+const agents = await client.getAgents();
+
+// Get sessions
+const sessions = await client.getSessions();
+
+// Listen for activity
+client.onActivity = (event) => {
+  console.log('New activity:', event);
+};
 ```
 
-Build for production:
+## 🐳 Docker Deployment
+
+Build and run with Docker:
+
 ```bash
-npm run build
-npm start
+docker build -t hive-dashboard .
+docker run -p 3000:3000 \
+  -e NEXT_PUBLIC_OPENCLAW_GATEWAY_URL=http://host.docker.internal:18789 \
+  -e NEXT_PUBLIC_OPENCLAW_TOKEN=your-token-here \
+  hive-dashboard
 ```
+
+Note: Use `host.docker.internal` instead of `127.0.0.1` when running in Docker.
 
 ## 📦 Stack
 
-- **Next.js 15** with App Router
-- **TypeScript**
-- **Tailwind CSS**
-- **Docker** for containerization
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **WebSocket API** - Real-time communication
+- **OpenClaw Gateway** - Backend service
 
 ## 🔗 Links
 
-- Tutorial: [OpenClaw Setup by @ashen_one](https://x.com/ashen_one/status/2017317310059421860)
-- Contact: [@stevie_builds](https://twitter.com/stevie_builds)
+- [OpenClaw Documentation](https://docs.openclaw.ai)
+- [OpenClaw GitHub](https://github.com/openclaw/openclaw)
 
 ## 📄 License
 
